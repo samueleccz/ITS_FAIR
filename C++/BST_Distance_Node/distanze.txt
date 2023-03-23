@@ -1,0 +1,10 @@
+quello nuovo = 3 2 4 6 4 6
+
+quello giusto = 3 2 4 6 4 6
+
+3 corretto
+2 corretto
+4 corretto
+6 corretto
+4 corretto
+6 corretto
