@@ -55,7 +55,7 @@ void ListaSempliceOrdinata::inserisci(int val){
         nuovo->succ = nullptr;
         this->testa = nuovo;
     }
-    // caso 2: se val<testa faccio un inserimento in testa
+    // caso 2: se val testa faccio un inserimento in testa
     else if(this->testa->valore >= val){
         nuovo->succ = this->testa;
         this->testa = nuovo;
