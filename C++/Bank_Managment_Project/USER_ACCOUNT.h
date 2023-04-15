@@ -6,17 +6,11 @@ using namespace std;
 
 class User{
     private:
-        string name, surname, cf;
-        bool sex;
+        string name, surname, sex;
         unsigned short age, bday, bmonth, byear;
         unsigned short id = 1;
     public:
-        User(string n, string s, char se) : name(n), surname(s){
-                if(se == 'm' or se == 'M')
-                    sex = true;
-                else
-                    sex = false;    
-        }
+        User(string n, string s, string se) : name(n), surname(s), sex(se){}
 
         void modifyName(string);
         void modifyAge(int, int, int, int);
