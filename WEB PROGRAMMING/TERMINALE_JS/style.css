@@ -1,0 +1,62 @@
+html{
+    background: url(pic.png);
+    color: gold;
+}
+
+div.frame{
+    position: absolute;
+    user-select: none;
+    top: 50px;
+    left: 50px;
+}
+
+div.frame>div.terminal{ /* CSS for Terminal */
+    position: relative;
+    background-color: black;
+    height: 250px;
+    width: 500px;
+
+    overflow: auto;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    resize: both;
+
+    min-width: 250px;
+    min-height: 220px;
+    max-height: 100%;
+}
+
+div.frame>div.terminal>div.header{ /* CSS for Terminal's Header*/
+    background-color: grey;
+    height: 25px;
+    width: 100%;
+}
+
+div.frame>div.terminal>div.text{ /* CSS for Terminal's Text */
+    background-color: black;
+    
+    height: 90%;
+    width: 100%;
+    
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.frame>.terminal>.text>.header>button{ /* CSS for Buttons */
+    height: 25px;
+    width: 25px;
+    color: black;
+}
+
+#idInput{
+    width: 100px;
+    background-color: black;
+    outline: none;
+    text-decoration: none;
+}
+
+img.icon_img{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+}

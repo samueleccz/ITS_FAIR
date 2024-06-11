@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JS Terminal </title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="frame" id="idFrame">
+        <div class="terminal" id="idTerminal">
+            <div class="header">
+                <button class="icon" onclick="terminalIcon()"> - </button>
+                <button class="resize" onclick="terminalResize()"> || </button>
+                <button class="close" onclick="terminalClose()"> X </button>
+
+                <small class="nameTerminal"> samueleccz's Terminal </small>
+            </div>
+            <div class="text" id="idText">
+                <span class="before">C:/Users/scucu></span>
+                <span id="idInput" class="input" contenteditable="true" autofocus></span>
+            </div>
+        </div>
+    </div>
+    
+    <img src="icon.png" alt="" class="icon_img" onclick="showTerminal()">
+    
+    <script src="script.js"></script> 
+    <script src="drag.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+
+html{
+    background: url(pic.png);
+    color: gold;
+}
+
+body{
+    overflow: hidden;
+}
+
+/* START SMALL TERMINAL */
+.small_terminal{
+    position: absolute;
+    top: 300px;
+    left: 150px;
+
+    width: 750px; 
+    height: 350px; 
+    overflow: auto;
+    resize: both;
+
+    background-color: black; 
+    border: 1px solid white;  
+
+    font-size:15px; 
+
+    max-width: 100%;
+    min-width: 350px;
+
+    max-height: 100%;
+    min-height: 234px;
+
+    z-index: 2;
+}
+
+.navbar{
+    position: relative;
+    color: gold;
+    margin: 10px;
+}
+
+div.terminal{
+    height: 88%;
+    width: 100%;
+}
+
+div.parent{
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    outline: none;
+}
+
+div.command{
+    width: 100%;
+}
+
+
+img.cross{
+    position: relative;
+    background-color: black;
+    float: right;
+    
+    left: 60px;
+    z-index: 10;
+}
+
+input[type=checkbox].expand{
+    position: relative;
+    background-color: black;
+    float: right;
+    color: gold;
+    border-color: grey;
+    left: 0px;
+    border: 1px solid black;
+    z-index: 11;
+    opacity: 0 !important;
+
+    cursor: pointer;
+}
+
+input[type=checkbox].icon{
+    position: relative;
+    background-color: black;
+    float: right;
+    color: gold;
+    border-color: grey;
+    left: -3px;
+    border: 1px solid black;
+    z-index: 11;
+    opacity: 0 !important;
+
+    cursor: pointer;
+}
+
+input[type=checkbox].cross{
+    position: relative;
+    background-color: black;
+    float: right;
+    color: gold;
+    border-color: grey;
+    left: 0px;
+    border: 1px solid black;
+    z-index: 11;
+    opacity: 0 !important;
+
+    cursor: pointer;
+}
+
+.small_terminal:has(.expand:checked), .small_terminal:has(.expand:checked)>.terminal>div.parent{
+    width:100% !important; 
+    height:100% !important; 
+
+    top: 0px;
+    left: 0px;
+}
+
+.small_terminal:has(.icon:checked) {
+    opacity: 0 !important;
+}
+
+.small_terminal:has(.cross:checked) {
+    opacity: 0 !important;
+}
+
+img.expand{
+    position: relative;
+    float: right;
+    left: 83px;
+}
+
+img.icon{
+    position: relative;
+    float: right;
+    left: 38px;
+    top: 2px;
+}
+
+.separator{
+    position: relative;
+    border: 1px solid gold;
+    margin-top: 0px;
+    width: 99%;
+}
+
+
+div.command::before{
+    content: "C:/Users/scucu> ";
+}
+
+/* END SMALL TERMINAL */
+
+/* EMPTY FILE */
+
+.icon_img{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+}
+
