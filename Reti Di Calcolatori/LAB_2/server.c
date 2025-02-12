@@ -208,12 +208,12 @@ int main(int argc, char**argv)
 			}
 
 			//copy_id[strlen(copy_id)-1] = '\0';
-			printf("copy id %s\n", copy_id);
+			//printf("copy id %s\n", copy_id);
 
 				char qt[10];
 					strcpy(qt, " ");
 			if(strcmp(copy_id," ") != 0){
-				printf("COPY PIENA\n");
+				//printf("COPY PIENA\n");
 				strcat(copy, tok_r);
 				strcat(copy, "#");
 					int qn = q-1;
@@ -230,7 +230,7 @@ int main(int argc, char**argv)
 				}
 				copy[strlen(copy)] = '\n';
 			}else{
-				printf("COPY VUOTA\n");
+				//printf("COPY VUOTA\n");
 				strcat(copy, tok_r);
 				strcat(copy, "#");
 					int qn = q-1;
@@ -247,7 +247,7 @@ int main(int argc, char**argv)
 				copy[strlen(copy)] = '\n';
 			}
 
-			printf("COMPLETE: %s\n", copy);
+			//printf("COMPLETE: %s\n", copy);
 
 
 			strcpy(copy_id, " ");
@@ -267,7 +267,7 @@ int main(int argc, char**argv)
 				char line[100];
 				int row = 0;
 
-				printf("INDICE RIGA: %d\n", counter);
+				//printf("INDICE RIGA: %d\n", counter);
 
 					while(fgets(line, 100, file)){
 						if(row != counter){
