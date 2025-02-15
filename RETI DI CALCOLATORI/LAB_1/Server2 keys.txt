@@ -1,3 +1,0 @@
-nicaragua:46946
-mineshaft:8761
-enemy:65643
